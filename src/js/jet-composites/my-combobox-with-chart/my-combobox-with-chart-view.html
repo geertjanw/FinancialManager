@@ -1,0 +1,33 @@
+
+
+<h1 data-bind="text:res.pie"></h1>
+
+<h1><oj-bind-text value="[[res.pie]]"></oj-bind-text></h1>
+
+<oj-combobox-one id="combobox" value="{{val}}" style="max-width:20em">
+    <oj-option value="pie">
+        <span><oj-bind-text value="[[res.pie]]"></oj-bind-text></span>
+    </oj-option>
+    <oj-option value="bar">Bar</oj-option>
+    <oj-option value="line">Line</oj-option>
+</oj-combobox-one>
+
+<oj-chart id="barChart"
+          type="[[val]]" 
+          orientation="[[orientationValue]]"
+          stack="[[stackValue]]"
+          series="[[barSeriesValue]]"
+          groups="[[barGroupsValue]]" 
+          animation-on-display="auto"
+          animation-on-data-change="auto"
+          hover-behavior="dim"
+          style="max-width:500px;width:100%;height:350px;">
+</oj-chart>
+
+<div>
+    <oj-bind-slot name="toolbar"></oj-bind-slot>
+</div>
+
+<span>Selected lang in component: <oj-bind-text value="[[selectedLangInComponent]]"></oj-bind-text></span>
+
+    

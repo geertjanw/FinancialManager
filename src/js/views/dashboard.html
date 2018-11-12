@@ -1,0 +1,52 @@
+<div class="oj-hybrid-padding">
+
+    <h1><oj-bind-text value="[[dashboardHeaderLabel]]"></oj-bind-text></h1>
+
+    <span>Selected lang in module: <oj-bind-text value="[[selectedLangInModule]]"></oj-bind-text></span>
+    
+    <div class="oj-flex">
+
+        <div class="oj-flex oj-sm-flex-direction-column">
+            <div class="oj-flex-item">
+                <demo-card id="demo-card-1"
+                    name="Donald Duck" 
+                    work-title="Cartoon Character"
+                    avatar="../js/images/donald-duck.png"
+                    on-card-click="[[clickListener]]"></demo-card>
+            </div> 
+           <div class="oj-flex-item">
+                <demo-card id="demo-card-2"
+                    name="Mickey Mouse" 
+                    work-title="Cartoon Character"
+                    avatar="../js/images/mickey-mouse.png"
+                    on-card-click="[[clickListener]]"></demo-card>
+            </div>
+            <div class="oj-flex-item">
+                <h3><oj-bind-text value="[[message]]"></oj-bind-text></h3>
+            </div>
+        </div>    
+        
+        <div class="oj-flex-item">
+            <my-combobox-with-chart 
+                chart-type="line" 
+                chart-data="[[data1]]">
+                <span slot="toolbar">
+                    <oj-button on-oj-action="[[flipMickey]]">Flip Mickey!</oj-button>   
+                </span>
+            </my-combobox-with-chart>
+        </div>
+
+        <div class="oj-flex-item">
+            <my-combobox-with-chart 
+                chart-type="bar"
+                on-chart-type-changed="[[chartTypeChangeWatcher]]"
+                chart-data="[[data2]]">
+                <span slot="toolbar">
+                    <h3><oj-bind-text value="[[currentChart]]"></oj-bind-text></h3>
+                </span>
+            </my-combobox-with-chart>
+        </div>
+
+    </div>
+
+</div>

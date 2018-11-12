@@ -1,0 +1,20 @@
+{
+  "name": "FinancialManager",
+  "version": "1.0.0",
+  "description": "An Oracle JavaScript Extension Toolkit(JET) web app",
+  "dependencies": {
+    "@oracle/oraclejet": "http://den00pwq.us.oracle.com:8080/hudson/job/OJET_Build/lastSuccessfulBuild/artifact/code/oracle-oraclejet-6.0.0.tgz"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "@oracle/grunt-oraclejet": "http://den00pwq.us.oracle.com:8080/hudson/job/Tooling/lastSuccessfulBuild/artifact/oracle-grunt-oraclejet-6.0.0.tgz",
+    "load-grunt-config": "0.19.2",
+    "@oracle/oraclejet-tooling": "http://den00pwq.us.oracle.com:8080/hudson/job/Tooling/lastSuccessfulBuild/artifact/oracle-oraclejet-tooling-6.0.0.tgz",
+    "qunit-reporter-junit": "^1.1.1",
+    "qunit": "^2.4.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true
+}

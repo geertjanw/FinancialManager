@@ -1,0 +1,8 @@
+my-combobox-with-chart:not(.oj-complete){
+  visibility: hidden;
+}
+
+my-combobox-with-chart{
+	min-height: 50px;
+	width: 50px;
+}
